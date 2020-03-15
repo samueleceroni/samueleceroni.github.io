@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: sans-serif;
-    color: #1e2b9e;
+    color: rgb(82, 82, 82);
 }
 
 body {
@@ -9,34 +9,25 @@ body {
 }
 
 header {
-    background-color: #003666;
-}
-
-header > * {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    background-color: rgb(53, 52, 52);
+    padding: 1em;
 }
 
 header * {
     color: white;
-}
-
-header > *:first-child {
-    padding-left: 1em;
-}
-
-header > *:last-child {
-    padding-right: 1em;
+    font-weight: bold;
 }
 
 header div.full-name {
     display: inline-block;
     font-weight: bold;
-    font-size: larger;
+    font-size: x-large;
+    padding: 4px;
 }
 
 header nav.topnav {
     display: inline-block;
+    text-align:right;
 }
 
 header nav.topnav > a{
@@ -47,7 +38,8 @@ header nav.topnav > a{
 }
 
 header nav.topnav > a:hover{
-    background-color: lightblue;
+    background-color: rgb(233, 233, 233);
+    color:rgb(53, 52, 52);
 }
 
 img.main-profile-picture {
@@ -58,18 +50,26 @@ img.main-profile-picture {
     border-bottom-right-radius: 1em;
 }
 
-body section {
+section {
     display: block;
-    padding: 0.1em;
-    border-radius: 1em;
+    padding: 2em;
 }
 
-body section.who-am-i{
+section:nth-of-type(odd){
+    background-color: white;
+}
+
+section:nth-of-type(even){
+    background-color: rgb(233, 233, 233);
+}
+
+section.who-am-i{
     text-align: center;
 }
 
-body section.page-summary > h2{
-    text-align: center;    
+section.page-summary > h2{
+    text-align: center;
+    margin-top: 0;
 }
 
 div.summary-elements-container{
@@ -81,8 +81,21 @@ div.summary-elements-container{
 div.summary-element{
     display: inline-block;
     padding: 0.8em;
-    background-color:rgb(233, 233, 233);
+    /* border: 0.05em solid; */
     border-radius: 1em;
+    margin: 0.5em;
+}
+
+ section:nth-of-type(odd) div.summary-element{
+    background-color: rgb(233, 233, 233);
+}
+
+section:nth-of-type(even) div.summary-element{
+    background-color: rgb(82, 82, 82);
+}
+
+section:nth-of-type(even) div.summary-element p{
+    color:white;
 }
 
 div.summary-element * {
