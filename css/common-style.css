@@ -1,0 +1,144 @@
+:root {
+    --first-color: white;
+    --second-color: rgb(233, 233, 233);
+    --third-color: rgb(82, 82, 82);
+
+    --default-text-color: var(--third-color);
+
+    --header-background-color: rgb(52, 52, 52);
+    --header-text-color: white;
+    --header-text-padding: 4px;
+    --header-text-border-radius: var(--header-text-padding);
+    --header-padding: 1em;
+    --header-text-background-color-hover: var(--second-color);
+    --header-text-color-hover: var(--header-background-color);
+
+    --img-bottom-border-radius: 1em;
+
+    --section-padding: 2em;
+    --section-odd-background-color: var(--first-color);
+    --section-even-background-color: var(--second-color);
+    --section-odd-element-background-color: var(--second-color);
+    --section-even-element-background-color: var(--third-color);
+    --section-even-element-text-color: var(--first-color);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: var(--default-text-color);
+}
+
+body {
+    margin-top:0;
+}
+
+header {
+    background-color: var(--header-background-color);
+    padding: var(--header-padding);
+}
+
+header * {
+    color: var(--header-text-color);
+    font-weight: bold;
+}
+
+header div.full-name {
+    display: inline-block;
+    font-weight: bold;
+    font-size: x-large;
+    padding: var(--header-text-padding);
+}
+
+header nav.topnav {
+    display: inline-block;
+    text-align:right;
+}
+
+header nav.topnav > a {
+    text-align:center;
+    text-decoration: none;
+    padding: var(--header-text-padding);
+    border-radius: var(--header-text-border-radius);
+}
+
+header nav.topnav > a:hover {
+    background-color: var(--header-text-background-color-hover);
+    color: var(--header-text-color-hover);
+}
+
+img.main-profile-picture {
+    display: block;
+    width: 100%;
+    border-bottom-left-radius: var(--img-bottom-border-radius);
+    border-bottom-right-radius: var(--img-bottom-border-radius);
+}
+
+section {
+    display: block;
+    padding: var(--section-padding);
+}
+
+section:nth-of-type(odd) {
+    background-color: var(--section-odd-background-color);
+}
+
+section:nth-of-type(even) {
+    background-color: var(--section-even-background-color);
+}
+
+section:nth-of-type(odd) div.summary-element{
+    background-color: var(--section-odd-element-background-color);
+}
+
+section:nth-of-type(even) div.summary-element{
+    background-color: var(--section-even-element-background-color);
+}
+
+section:nth-of-type(even) div.summary-element p{
+    color:var(--section-even-element-text-color);
+}
+
+section.who-am-i{
+    text-align: center;
+}
+
+section.page-summary > h2{
+    text-align: center;
+    margin-top: 0;
+}
+
+div.summary-elements-container{
+    display: block;
+    margin-left: auto;
+    text-align:center;
+}
+
+div.summary-element{
+    display: inline-block;
+    padding: 0.8em;
+    /* border: 0.05em solid; */
+    border-radius: 1em;
+    margin: 0.5em;
+}
+
+div.summary-element * {
+    margin: 0;
+}
+
+div.summary-element > img{
+    width: 100%;
+    border-radius: 0.5em;
+}
+
+div.summary-element > p.summary-element-title{
+    font-weight: bold;
+}
+
+div.summary-element > p.summary-element-dates{
+    font-family: monospace;
+}
+
+div.summary-element > p.summary-element-detail{
+    margin:0;
+}
