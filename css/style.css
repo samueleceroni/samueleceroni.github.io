@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: sans-serif;
+    color: #1e2b9e;
 }
 
 body {
@@ -9,12 +10,15 @@ body {
 
 header {
     background-color: #003666;
-    color: white;
 }
 
 header > * {
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+header * {
+    color: white;
 }
 
 header > *:first-child {
@@ -37,7 +41,6 @@ header nav.topnav {
 
 header nav.topnav > a{
     text-align:center;
-    color:white;
     text-decoration: none;
     padding: 4px;
     border-radius: 4px;
@@ -77,11 +80,28 @@ div.summary-elements-container{
 
 div.summary-element{
     display: inline-block;
-    padding: 0.5em;
-    background-color:lightgray;
+    padding: 0.8em;
+    background-color:rgb(233, 233, 233);
     border-radius: 1em;
 }
 
-div.summary-element > img {
+div.summary-element * {
+    margin: 0;
+}
+
+div.summary-element > img{
     width: 100%;
+    border-radius: 0.5em;
+}
+
+div.summary-element > p.summary-element-title{
+    font-weight: bold;
+}
+
+div.summary-element > p.summary-element-dates{
+    font-family: monospace;
+}
+
+div.summary-element > p.summary-element-detail{
+    margin:0;
 }
