@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin-top:0;
+}
+
+header {
+    background-color: #003666;
+    color: white;
+}
+
+header > * {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+header > *:first-child {
+    padding-left: 1em;
+}
+
+header > *:last-child {
+    padding-right: 1em;
+}
+
+header div.full-name {
+    display: inline-block;
+    font-weight: bold;
+    font-size: larger;
+}
+
+header nav.topnav {
+    display: inline-block;
+}
+
+header nav.topnav > a{
+    text-align:center;
+    color:white;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+header nav.topnav > a:hover{
+    background-color: lightblue;
+}
+
+img.main-profile-picture {
+    display: block;
+    width:100%;
+    height: 250px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+body section {
+    display: block;
+    padding: 0.1em;
+    border-radius: 1em;
+}
+
+body section.who-am-i{
+    text-align: center;
+}
+
+body section.page-summary > h2{
+    text-align: center;    
+}
+
+div.summary-elements-container{
+    display: block;
+    margin-left: auto;
+    text-align:center;
+}
+
+div.summary-element{
+    display: inline-block;
+    padding: 0.5em;
+    background-color:lightgray;
+    border-radius: 1em;
+}
+
+div.summary-element > img {
+    width: 100%;
+}
