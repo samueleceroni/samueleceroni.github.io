@@ -42,11 +42,12 @@ header {
 header * {
     color: var(--header-text-color);
     font-weight: bold;
+    vertical-align: middle;
 }
 
 header > * {
     display: inline-block;
-    min-width: fit-content;
+    min-width: fit-content;    
     width: 33%;
 }
 
@@ -60,19 +61,29 @@ header > *:last-child {
 
 header div.full-name {
     font-weight: bold;
-    font-size: x-large;
+    font-size: xx-large;
     padding: var(--header-text-padding);
 }
 
-header a {
+header .topnav a {
     text-decoration: none;
     padding: var(--header-text-padding);
     border-radius: var(--header-text-border-radius);
 }
 
-header a:hover {
+header .topnav a:hover {
     background-color: var(--header-text-background-color-hover);
     color: var(--header-text-color-hover);
+}
+
+header .contacts-bar a img {
+    height: 2.2em;
+    margin: 0.2em;
+}
+
+header .contacts-bar a img:hover {
+    height: 2.6em;
+    margin: 0;
 }
 
 img.main-profile-picture {
