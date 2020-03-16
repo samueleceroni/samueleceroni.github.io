@@ -7,7 +7,7 @@
 
     --header-background-color: rgb(52, 52, 52);
     --header-text-color: white;
-    --header-text-padding: 4px;
+    --header-text-padding: 6px;
     --header-text-border-radius: var(--header-text-padding);
     --header-padding: 1em;
     --header-text-background-color-hover: var(--second-color);
@@ -68,6 +68,7 @@ header .topnav a {
     text-decoration: none;
     padding: var(--header-text-padding);
     border-radius: var(--header-text-border-radius);
+    font-size: 20px;
 }
 
 header .topnav a:hover {
@@ -86,8 +87,9 @@ header .contacts-bar a img:hover {
 }
 
 img.main-profile-picture {
-    display: block;
+    display: inline-block;
     width: 100%;
+    height: 450px;
     border-bottom-left-radius: var(--img-bottom-border-radius);
     border-bottom-right-radius: var(--img-bottom-border-radius);
 }
