@@ -47,15 +47,17 @@ header * {
 
 header > * {
     display: inline-block;
-    width:33%;
+    width:50%;
 }
 
 header > *:first-child {
     text-align: left;
+    width:24%;
 }
 
 header > *:last-child {
     text-align: right;
+    width:24%;
 }
 
 header div.full-name {
@@ -89,7 +91,7 @@ header .contacts-bar a img:hover {
 img.main-profile-picture {
     display: inline-block;
     width: 100%;
-    height: 450px;
+    /* height: 450px; */
     border-bottom-left-radius: var(--img-bottom-border-radius);
     border-bottom-right-radius: var(--img-bottom-border-radius);
 }
@@ -108,77 +110,102 @@ section:nth-of-type(even) {
     background-color: var(--section-even-background-color);
 }
 
-section:nth-of-type(odd) div.summary-element{
+section:nth-of-type(odd) div.summary-element, section:nth-of-type(odd) div.detail-element {
     background-color: var(--section-odd-element-background-color);
 }
 
-section:nth-of-type(even) div.summary-element{
+section:nth-of-type(even) div.summary-element, section:nth-of-type(even) div.detail-element {
     background-color: var(--section-even-element-background-color);
 }
 
-section:nth-of-type(even) div.summary-element p{
+section:nth-of-type(even) div.summary-element p, section:nth-of-type(even) div.detail-element p {
     color:var(--section-even-element-text-color);
 }
 
-section.who-am-i{
-    text-align: center;
-}
-
-div.summary-elements-content{
+div.summary-elements-content, div.detail-elements-content{
     width:85%;
     margin: 0 auto;
 }
 
-section.page-summary > h1{
+section.page-summary > h1, section.page-detail > h1{
     font-size: xx-large;
     text-align: center;
     margin-top: 0;
 }
 
-section.page-summary > h1 > a{
+section.page-summary > h1 > a, section.page-detail > h1 > a {
     text-decoration: none;
 }
 
-section.page-summary > h1 > a:hover{
+section.page-summary > h1 > a:hover {
     text-decoration: underline;
 }
 
-div.summary-elements-container{
+div.summary-elements-container, div.detail-elements-container {
     display: block;
     margin-left: auto;
     text-align:center;
 }
 
-div.summary-element{
+div.summary-element, div.detail-element-head, div.detail-element-description {
     display: inline-block;
     padding: 0.8em;
     border-radius: 1em;
     margin: 1em;
 }
 
-div.summary-element * {
-    margin: 0;
+div.detail-element {
+    display: block;
+    padding: 0.8em;
+    border-radius: 1em;
+    margin: 1em;
 }
 
-div.summary-element p {
+div.detail-element > img {
+    height: 150px;
+    max-width: 150px;
+    border-radius: 0.5em;
+    margin: 0.5em;
+}
+
+div.detail-element-head > p {
+    display: block;
+    max-width: 180px;
+}
+
+div.detail-element-description {
+    width: 60%;
+}
+
+div.summary-element *, div.detail-element * {
+    margin: 0;
+    vertical-align: middle;
+}
+
+div.detail-element * {
+    display: inline-block;
+}
+
+div.summary-element p, div.detail-element p, div.detail-element-head p  {
     margin: 0.2em;
 }
 
-div.summary-element > img{
+div.summary-element > img {
     width: 235px;
     height: 235px;
     border-radius: 0.5em;
 }
 
-div.summary-element > p.summary-element-title{
+div.summary-element > p.summary-element-title, div.detail-element-head > p.detail-element-title {
     font-weight: bold;
     font-size: x-large;
 }
 
-div.summary-element > p.summary-element-dates{
-    font-family: monospace;
+div.summary-element > p.summary-element-detail, div.detail-element-head > p.detail-element-detail{
+    margin:0;
 }
 
-div.summary-element > p.summary-element-detail{
-    margin:0;
+div.summary-element > p.summary-element-dates, div.detail-element-head > p.detail-element-dates {
+    font-family: monospace;
+    font-size: small;
 }
