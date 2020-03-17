@@ -33,67 +33,70 @@ body {
     margin-top:0;
 }
 
-header {
+header > div.topbar {
     background-color: var(--header-background-color);
     padding: var(--header-padding);
     text-align: center;
 }
 
-header * {
+header  > div.topbar * {
     color: var(--header-text-color);
     font-weight: bold;
     vertical-align: middle;
 }
 
-header > * {
+header > div.topbar > * {
     display: inline-block;
     width:50%;
 }
 
-header > *:first-child {
+header > div.topbar > *:first-child {
     text-align: left;
     width:24%;
 }
 
-header > *:last-child {
+header > div.topbar > *:last-child {
     text-align: right;
     width:24%;
 }
 
-header div.full-name {
+header > div.topbar div.full-name {
     font-weight: bold;
     font-size: xx-large;
     padding: var(--header-text-padding);
 }
 
-header .topnav a {
+header > div.topbar .topnav a {
     text-decoration: none;
     padding: var(--header-text-padding);
     border-radius: var(--header-text-border-radius);
     font-size: 20px;
 }
 
-header .topnav a:hover {
+header > div.topbar .topnav a:hover {
     background-color: var(--header-text-background-color-hover);
     color: var(--header-text-color-hover);
 }
 
-header .contacts-bar a img {
+header > div.topbar .contacts-bar a img {
     height: 2.2em;
     margin: 0.2em;
 }
 
-header .contacts-bar a img:hover {
+header > div.topbar .contacts-bar a img:hover {
     height: 2.6em;
     margin: 0;
 }
 
-img.main-profile-picture {
+header > img.main-profile-picture {
     display: inline-block;
     width: 100%;
-    /* height: 450px; */
+}
+
+header > *:last-child{
     border-bottom-left-radius: var(--img-bottom-border-radius);
     border-bottom-right-radius: var(--img-bottom-border-radius);
+
 }
 
 section {
