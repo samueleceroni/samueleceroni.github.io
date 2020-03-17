@@ -23,7 +23,7 @@
     --section-even-element-text-color: var(--first-color);
 }
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     font-family: sans-serif;
     color: var(--default-text-color);
@@ -37,27 +37,15 @@ header > div.topbar {
     background-color: var(--header-background-color);
     padding: var(--header-padding);
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header  > div.topbar * {
     color: var(--header-text-color);
     font-weight: bold;
     vertical-align: middle;
-}
-
-header > div.topbar > * {
-    display: inline-block;
-    width:50%;
-}
-
-header > div.topbar > *:first-child {
-    text-align: left;
-    width:24%;
-}
-
-header > div.topbar > *:last-child {
-    text-align: right;
-    width:24%;
 }
 
 header > div.topbar div.full-name {
@@ -190,7 +178,7 @@ div.detail-element-head > p {
 }
 
 div.detail-element-description {
-    width: 60%;
+    width: 55%;
 }
 
 div.summary-element *, div.detail-element * {
