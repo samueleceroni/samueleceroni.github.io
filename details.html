@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +11,12 @@
         <!--navigation bar, should be in common to all the pages-->
         <div class="topbar">
             <div class="full-name">
-                Samuele Ceroni
+                <a href="index.html">Samuele Ceroni</a>
             </div>
             <nav class="topnav">
-                <a href="index.html">Home</a>
-                <a href="details.html#work_experience">Experience</a>
+                <a href="details.html#experience">Experience</a>
                 <a href="details.html#education">Education</a>
+                <a href="details.html#projects">Projects</a>
                 <a href="details.html#awards">Awards</a>
                 <a href="contacts.html">Contacts</a>
             </nav>
@@ -30,12 +30,11 @@
         </div>
     </header>
     <main>
-        <!--navigation bar, should be in common to all the pages but the one of -->
         <section class="preferred-phrase"><!--TODO change or add title-->
             <h2><i>"Hard work beats talent when talent doesn't work hard."</i></h2>
         </section>
-        <section class="page-detail">
-            <h1><a id="work_experience">Work experience</a></h1>
+        <section class="page-detail" id="experience">
+            <h1>Work experience</h1>
             <div class="detail-elements-container">
                 <div class="detail-elements-content">
                     <div class="detail-element" id="microsoft-detail">
@@ -60,7 +59,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quae deserunt fugiat? Ipsa, autem corrupti! Quos sint cum voluptatibus sit placeat? Recusandae, amet. Vel nostrum esse ipsum est magnam dicta.</p>
                         </div>
                     </div>
-                    <div class="detail-element" id="competitive-programmming-tutor-detail">
+                    <div class="detail-element" id="coderfarm-detail">
                         <img src="image/cp_tutor.jpg" alt="cp_tutor_logo">
                         <div class="detail-element-head">
                             <p class="detail-element-title">Coderfarm Imola</p>
@@ -74,11 +73,11 @@
                 </div>
             </div>
         </section>
-        <section class="page-detail">
-            <h1><a href="details.html#education">Education</a></h1>
+        <section class="page-detail" id="education">
+            <h1>Education</h1>
             <div class="detail-elements-container">
                 <div class="detail-elements-content">
-                    <div class="detail-element" id="college-of-staten-island-detail">
+                    <div class="detail-element" id="csi-detail">
                         <img src="image/csi_logo.png" alt="csi_logo">
                         <div class="detail-element-head">
                             <p class="detail-element-title">CSI, New York</p>
@@ -101,7 +100,7 @@
                         </div>
                     </div>
                     <div class="detail-element" id="falberghetti-detail">
-                        <img src="image/falberghetti_logo.png" alt="">
+                        <img src="image/falberghetti_logo.png" alt="falberghetti_logo">
                         <div class="detail-element-head">
                             <p class="detail-element-title">F. Alberghetti</p>
                             <p class="detail-element-detail">High School of Applied Science</p>
@@ -114,11 +113,11 @@
                 </div>
             </div>
         </section>
-        <section class="page-detail">
-            <h1><a href="details.html#projects">Projects</a></h1>
+        <section class="page-detail" id="projects">
+            <h1>Projects</h1>
             <div class="detail-elements-container">
                 <div class="detail-elements-content">
-                    <div class="detail-element">
+                    <div class="detail-element" id="nwoolcan-detail">
                         <img src="image/beer.png" alt="beer">
                         <div class="detail-element-head">
                             <p class="detail-element-title">nWoolcan</p>
@@ -129,7 +128,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quae deserunt fugiat? Ipsa, autem corrupti! Quos sint cum voluptatibus sit placeat? Recusandae, amet. Vel nostrum esse ipsum est magnam dicta.</p>
                         </div>
                     </div>
-                    <div class="detail-element">
+                    <div class="detail-element" id="labasd-detail">
                         <img src="image/sql_logo.png" alt="sql_logo">
                         <div class="detail-element-head">
                             <p class="detail-element-title">LabASD</p>
@@ -140,7 +139,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quae deserunt fugiat? Ipsa, autem corrupti! Quos sint cum voluptatibus sit placeat? Recusandae, amet. Vel nostrum esse ipsum est magnam dicta.</p>
                         </div>
                     </div>
-                    <div class="detail-element">
+                    <div class="detail-element" id="telegram-bot-detail">
                         <img src="image/telegram_bot.png" alt="telegram-bot-logo">
                         <div class="detail-element-head">
                             <p class="detail-element-title">Telegram Bot</p>
@@ -154,11 +153,11 @@
                 </div>
             </div>
         </section>
-        <section class="page-detail">
-            <h1><a href="details.html#awards">Awards</a></h1>
+        <section class="page-detail" id="awards">
+            <h1>Awards</h1>
             <div class="detail-elements-container">
                 <div class="detail-elements-content">
-                    <div class="detail-element">
+                    <div class="detail-element" id="leadthefuture-detail">
                         <img src="image/leadthefuture_logo.png" alt="leadthefuture_logo">
                         <div class="detail-element-head">
                             <p class="detail-element-title">LeadTheFuture</p>
@@ -169,8 +168,8 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quae deserunt fugiat? Ipsa, autem corrupti! Quos sint cum voluptatibus sit placeat? Recusandae, amet. Vel nostrum esse ipsum est magnam dicta.</p>
                         </div>
                     </div>
-                    <div class="detail-element">
-                        <img src="image/icpc_logo.png" alt="">
+                    <div class="detail-element" id="icpc-workshop-detail">
+                        <img src="image/icpc_logo.png" alt="icpc_logo">
                         <div class="detail-element-head">
                             <p class="detail-element-title">ICPC Workshop</p>
                             <p class="detail-element-detail">Moscow Pre Finals Workshop</p>
@@ -180,8 +179,8 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quae deserunt fugiat? Ipsa, autem corrupti! Quos sint cum voluptatibus sit placeat? Recusandae, amet. Vel nostrum esse ipsum est magnam dicta.</p>
                         </div>
                     </div>
-                    <div class="detail-element">
-                        <img src="image/euso_logo.png" alt="">
+                    <div class="detail-element" id="euso-detail">
+                        <img src="image/euso_logo.png" alt="euso_logo">
                         <div class="detail-element-head">
                             <p class="detail-element-title">EU Science Olympiad</p>
                             <p class="detail-element-detail">Silver Medal</p>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +8,14 @@
 </head>
 <body>
     <header>
-        <!--navigation bar, should be in common to all the pages-->
         <div class="topbar">
             <div class="full-name">
-                Samuele Ceroni
+                <a href="index.html">Samuele Ceroni</a>
             </div>
             <nav class="topnav">
-                <a href="index.html">Home</a>
-                <a href="details.html#work_experience">Experience</a>
+                <a href="details.html#experience">Experience</a>
                 <a href="details.html#education">Education</a>
+                <a href="details.html#projects">Projects</a>
                 <a href="details.html#awards">Awards</a>
                 <a href="contacts.html">Contacts</a>
             </nav>
@@ -31,101 +30,130 @@
         <img class="main-profile-picture" src="image/skyline_new_york.jpg" alt="sam pic goes here">
     </header>
     <main>
-        <!--navigation bar, should be in common to all the pages but the one of -->
         <section class="who-am-i"><!--TODO change or add title-->
             <h2><i>"Hard work beats talent when talent doesn't work hard."</i></h2>
         </section>
         <section class="page-summary">
-            <h1><a href="details.html#work_experience">Work experience</a></h1>
+            <h1><a href="details.html#experience">Work experience</a></h1>
             <div class="summary-elements-container">
                 <div class="summary-elements-content">
-                    <div class="summary-element">
-                        <img src="image/microsoft_logo.png" alt="microsoft_logo">
-                        <p class="summary-element-title">Microsoft</p>
-                        <p class="summary-element-detail">Software Engineer Intern</p>
-                        <p class="summary-element-dates">JULY 2020 - SEPTEMBER 2020</p>
-                    </div>
-                    <div class="summary-element">
-                        <img src="image/gresearch_logo.png" alt="gresearch_logo">
-                        <p class="summary-element-title">G-Research</p>
-                        <p class="summary-element-detail">Software Engineer Intern</p>
-                        <p class="summary-element-dates">JULY 2019 - DECEMBER 2019</p>
-                    </div>
-                    <div class="summary-element">
-                        <img src="image/cp_tutor.jpg" alt="cp_tutor_logo">
-                        <p class="summary-element-title">Coderfarm Imola</p>
-                        <p class="summary-element-detail">Competitive Programming Tutor</p>
-                        <p class="summary-element-dates"> SEPTEMBER 2018 - APRIL 2019</p>
-                    </div>
+                    <a href="details.html#microsoft-detail">
+                        <div class="summary-element">
+                            <img src="image/microsoft_logo.png" alt="microsoft_logo">
+                            <p class="summary-element-title">Microsoft</p>
+                            <p class="summary-element-detail">Software Engineer Intern</p>
+                            <p class="summary-element-dates">JULY 2020 - SEPTEMBER 2020</p>
+                        </div>
+                    </a>
+                    <a href="details.html#g-research-detail">
+                        <div class="summary-element">
+                            <img src="image/gresearch_logo.png" alt="gresearch_logo">
+                            <p class="summary-element-title">G-Research</p>
+                            <p class="summary-element-detail">Software Engineer Intern</p>
+                            <p class="summary-element-dates">JULY 2019 - DECEMBER 2019</p>
+                        </div>
+                    </a>
+                    <a href="details.html#coderfarm-detail">
+                        <div class="summary-element">
+                            <img src="image/cp_tutor.jpg" alt="cp_tutor_logo">
+                            <p class="summary-element-title">Coderfarm Imola</p>
+                            <p class="summary-element-detail">Competitive Programming Tutor</p>
+                            <p class="summary-element-dates"> SEPTEMBER 2018 - APRIL 2019</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
         <section class="page-summary">
             <h1><a href="details.html#education">Education</a></h1>
             <div class="summary-elements-container">
-                <div class="summary-element">
-                    <img src="image/csi_logo.png" alt="csi_logo">
-                    <p class="summary-element-title">CSI, New York</p>
-                    <p class="summary-element-detail">Overseas Study Abroad</p>
-                    <p class="summary-element-dates">JANUARY 2020 - MAY 2020</p>
-                </div>
-                <div class="summary-element">
-                    <img src="image/unibo_logo.png" alt="unibo_logo">
-                    <p class="summary-element-title">University of Bologna</p>
-                    <p class="summary-element-detail">Bachelor of Computer Science</p>
-                    <p class="summary-element-dates">SEPTEMBER 2017 - PRESENT</p>
-                </div>
-                <div class="summary-element">
-                    <img src="image/falberghetti_logo.png" alt="">
-                    <p class="summary-element-title">F. Alberghetti</p>
-                    <p class="summary-element-detail">High School of Applied Science</p>
-                    <p class="summary-element-dates">SEPTEMBER 2012 - JULY 2017</p>
+                <div class="summary-elements-content">
+                    <a href="details.html#csi-detail">
+                        <div class="summary-element">
+                            <img src="image/csi_logo.png" alt="csi_logo">
+                            <p class="summary-element-title">CSI, New York</p>
+                            <p class="summary-element-detail">Overseas Study Abroad</p>
+                            <p class="summary-element-dates">JANUARY 2020 - MAY 2020</p>
+                        </div>
+                    </a>
+                    <a href="details.html#unibo-detail">
+                        <div class="summary-element">
+                            <img src="image/unibo_logo.png" alt="unibo_logo">
+                            <p class="summary-element-title">University of Bologna</p>
+                            <p class="summary-element-detail">Bachelor of Computer Science</p>
+                            <p class="summary-element-dates">SEPTEMBER 2017 - PRESENT</p>
+                        </div>
+                    </a>
+                    <a href="details.html#falberghetti-detail">
+                        <div class="summary-element">
+                            <img src="image/falberghetti_logo.png" alt="falberghetti_logo">
+                            <p class="summary-element-title">F. Alberghetti</p>
+                            <p class="summary-element-detail">High School of Applied Science</p>
+                            <p class="summary-element-dates">SEPTEMBER 2012 - JULY 2017</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
         <section class="page-summary">
             <h1><a href="details.html#projects">Projects</a></h1>
             <div class="summary-elements-container">
-                <div class="summary-element">
-                    <img src="image/beer.png" alt="beer">
-                    <p class="summary-element-title">nWoolcan</p>
-                    <p class="summary-element-detail">Home Brewery Assistant </p>
-                    <p class="summary-element-dates">2019</p>
-                </div>
-                <div class="summary-element">
-                    <img src="image/sql_logo.png" alt="sql_logo">
-                    <p class="summary-element-title">LabASD</p>
-                    <p class="summary-element-detail">SQL Emulator in C</p>
-                    <p class="summary-element-dates">2018</p>
-                </div>
-                <div class="summary-element">
-                    <img src="image/telegram_bot.png" alt="telegram-bot-logo">
-                    <p class="summary-element-title">Telegram Bot</p>
-                    <p class="summary-element-detail">Virtual wallet manager</p>
-                    <p class="summary-element-dates">2017</p>
+                <div class="summary-elements-content">
+                    <a href="details.html#nwoolcan-detail">
+                        <div class="summary-element">
+                            <img src="image/beer.png" alt="beer">
+                            <p class="summary-element-title">nWoolcan</p>
+                            <p class="summary-element-detail">Home Brewery Assistant </p>
+                            <p class="summary-element-dates">2019</p>
+                        </div>
+                    </a>
+                    <a href="details.html#labasd-detail">
+                        <div class="summary-element">
+                            <img src="image/sql_logo.png" alt="sql_logo">
+                            <p class="summary-element-title">LabASD</p>
+                            <p class="summary-element-detail">SQL Emulator in C</p>
+                            <p class="summary-element-dates">2018</p>
+                        </div>
+                    </a>
+                    <a href="details.html#telegram-bot-detail">
+                        <div class="summary-element">
+                            <img src="image/telegram_bot.png" alt="telegram-bot-logo">
+                            <p class="summary-element-title">Telegram Bot</p>
+                            <p class="summary-element-detail">Virtual wallet manager</p>
+                            <p class="summary-element-dates">2017</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
         <section class="page-summary">
             <h1><a href="details.html#awards">Awards</a></h1>
             <div class="summary-elements-container">
-                <div class="summary-element">
-                    <img src="image/leadthefuture_logo.png" alt="leadthefuture_logo">
-                    <p class="summary-element-title">LeadTheFuture</p>
-                    <p class="summary-element-detail">Co-Team and Mentee</p>
-                    <p class="summary-element-dates">2019 - PRESENT</p>
-                </div>
-                <div class="summary-element">
-                    <img src="image/icpc_logo.png" alt="">
-                    <p class="summary-element-title">ICPC Workshop</p>
-                    <p class="summary-element-detail">Moscow Pre Finals Workshop</p>
-                    <p class="summary-element-dates">MARCH 2019</p>
-                </div>
-                <div class="summary-element">
-                    <img src="image/euso_logo.png" alt="">
-                    <p class="summary-element-title">EU Science Olympiad</p>
-                    <p class="summary-element-detail">Silver Medal</p>
-                    <p class="summary-element-dates">2015</p>
+                <div class="summary-elements-content">
+                    <a href="details.html#leadthefuture-detail">
+                        <div class="summary-element">
+                            <img src="image/leadthefuture_logo.png" alt="leadthefuture_logo">
+                            <p class="summary-element-title">LeadTheFuture</p>
+                            <p class="summary-element-detail">Co-Team and Mentee</p>
+                            <p class="summary-element-dates">2019 - PRESENT</p>
+                        </div>
+                    </a>
+                    <a href="details.html#icpc-workshop-detail">
+                        <div class="summary-element">
+                            <img src="image/icpc_logo.png" alt="icpc_logo">
+                            <p class="summary-element-title">ICPC Workshop</p>
+                            <p class="summary-element-detail">Moscow Pre Finals Workshop</p>
+                            <p class="summary-element-dates">MARCH 2019</p>
+                        </div>
+                    </a>
+                    <a href="details.html#euso-detail">
+                        <div class="summary-element">
+                            <img src="image/euso_logo.png" alt="euso_logo">
+                            <p class="summary-element-title">EU Science Olympiad</p>
+                            <p class="summary-element-detail">Silver Medal</p>
+                            <p class="summary-element-dates">2015</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>

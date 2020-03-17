@@ -66,14 +66,17 @@ header > div.topbar div.full-name {
     padding: var(--header-text-padding);
 }
 
-header > div.topbar .topnav a {
+header > div.topbar > div.full-name a, header > div.topbar > nav.topnav a {
     text-decoration: none;
     padding: var(--header-text-padding);
     border-radius: var(--header-text-border-radius);
+}
+
+header > div.topbar .topnav a {
     font-size: 20px;
 }
 
-header > div.topbar .topnav a:hover {
+header > div.topbar > nav.topnav > a:hover, header > div.topbar > div.full-name > a:hover {
     background-color: var(--header-text-background-color-hover);
     color: var(--header-text-color-hover);
 }
@@ -130,6 +133,10 @@ div.summary-elements-content, div.detail-elements-content{
     margin: 0 auto;
 }
 
+div.summary-elements-content > a {
+    text-decoration: none;
+}
+
 section.page-summary > h1, section.page-detail > h1{
     font-size: xx-large;
     text-align: center;
@@ -138,10 +145,16 @@ section.page-summary > h1, section.page-detail > h1{
 
 section.page-summary > h1 > a, section.page-detail > h1 > a {
     text-decoration: none;
+    padding:0.5em;
+    border-radius: 0.5em;
 }
 
-section.page-summary > h1 > a:hover {
-    text-decoration: underline;
+section.page-summary:nth-child(odd) > h1 > a:hover {
+    background-color: var(--section-odd-element-background-color);
+}
+section.page-summary:nth-child(even) > h1 > a:hover {
+    color: var(--section-even-background-color);
+    background-color: var(--section-even-element-background-color);
 }
 
 div.summary-elements-container, div.detail-elements-container {
@@ -164,7 +177,7 @@ div.detail-element {
     margin: 1em;
 }
 
-div.detail-element > img {
+div.detail-element img {
     height: 150px;
     max-width: 150px;
     border-radius: 0.5em;
@@ -193,7 +206,7 @@ div.summary-element p, div.detail-element p, div.detail-element-head p  {
     margin: 0.2em;
 }
 
-div.summary-element > img {
+div.summary-element img {
     width: 235px;
     height: 235px;
     border-radius: 0.5em;
