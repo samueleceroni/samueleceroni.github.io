@@ -23,17 +23,21 @@
     --section-even-element-text-color: var(--first-color);
 }
 
-*, *::before, *::after {
+html{
     box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
     font-family: sans-serif;
     color: var(--default-text-color);
 }
 
 body {
-    margin-top:0;
+    margin:0;
 }
 
-header > div.topbar {
+div.topbar {
     background-color: var(--header-background-color);
     padding: var(--header-padding);
     text-align: center;
@@ -42,39 +46,39 @@ header > div.topbar {
     justify-content: space-between;
 }
 
-header  > div.topbar * {
+div.topbar * {
     color: var(--header-text-color);
     font-weight: bold;
     vertical-align: middle;
 }
 
-header > div.topbar div.full-name {
+div.topbar div.full-name {
     font-weight: bold;
     font-size: xx-large;
     padding: var(--header-text-padding);
 }
 
-header > div.topbar > div.full-name a, header > div.topbar > nav.topnav a {
+div.topbar > div.full-name a, div.topbar > nav.topnav a {
     text-decoration: none;
     padding: var(--header-text-padding);
     border-radius: var(--header-text-border-radius);
 }
 
-header > div.topbar .topnav a {
+div.topbar .topnav a {
     font-size: 20px;
 }
 
-header > div.topbar > nav.topnav > a:hover, header > div.topbar > div.full-name > a:hover {
+div.topbar > nav.topnav > a:hover, div.topbar > div.full-name > a:hover {
     background-color: var(--header-text-background-color-hover);
     color: var(--header-text-color-hover);
 }
 
-header > div.topbar .contacts-bar a img {
+div.topbar .contacts-bar a img {
     height: 2.2em;
     margin: 0.2em;
 }
 
-header > div.topbar .contacts-bar a img:hover {
+div.topbar .contacts-bar a img:hover {
     height: 2.6em;
     margin: 0;
 }
@@ -125,8 +129,14 @@ div.summary-elements-content > a {
     text-decoration: none;
 }
 
-section.page-summary > h1, section.page-detail > h1{
+section > h1{
     font-size: xx-large;
+    text-align: center;
+    margin-top: 0;
+}
+
+section > h2{
+    font-size: x-large;
     text-align: center;
     margin-top: 0;
 }
@@ -212,4 +222,44 @@ div.summary-element > p.summary-element-detail, div.detail-element-head > p.deta
 div.summary-element > p.summary-element-dates, div.detail-element-head > p.detail-element-dates {
     font-family: monospace;
     font-size: small;
+}
+
+div.your-project-data {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.your-project-data * {
+    vertical-align: middle;
+}
+
+div.your-project-data > div {
+    padding: 1em;
+    border-radius: 1em;
+    margin: 0.5em;
+    background-color: white;
+    align-content: middle;
+}
+
+div.whole-line{
+    min-width:70%;
+}
+
+div.submission-reset * {
+    padding: 1em;
+    margin: 0 1em;
+    font-size: large;
+    border-radius: 1em;
+    border: 0;
+    background-color: var(--third-color);
+    font-weight: bold;
+    color:white;
+}
+
+div.submission-reset *:hover {
+    cursor: pointer;
 }
