@@ -111,24 +111,24 @@ section:nth-of-type(even) {
     background-color: var(--section-even-background-color);
 }
 
-section:nth-of-type(odd) div.summary-element, section:nth-of-type(odd) div.detail-element {
+section:nth-of-type(odd) div.section-element {
     background-color: var(--section-odd-element-background-color);
 }
 
-section:nth-of-type(even) div.summary-element, section:nth-of-type(even) div.detail-element {
+section:nth-of-type(even) div.section-element {
     background-color: var(--section-even-element-background-color);
 }
 
-section:nth-of-type(even) div.summary-element p, section:nth-of-type(even) div.detail-element p, section:nth-of-type(even) div.summary-element p *, section:nth-of-type(even) div.detail-element p *  {
+section:nth-of-type(even) div.section-element * {
     color:var(--section-even-element-text-color);
 }
 
-div.summary-elements-content, div.detail-elements-content{
+div.section-elements-content{
     width:85%;
     margin: 0 auto;
 }
 
-div.summary-elements-content > a {
+div.section-elements-content > a {
     text-decoration: none;
 }
 
@@ -158,7 +158,7 @@ section.page-summary:nth-child(even) > h1 > a:hover {
     background-color: var(--section-even-element-background-color);
 }
 
-div.summary-elements-container, div.detail-elements-container {
+div.section-elements-container {
     display: block;
     margin-left: auto;
     text-align:center;
@@ -194,7 +194,7 @@ div.detail-element-description {
     width: 55%;
 }
 
-div.summary-element *, div.detail-element * {
+div.section-element * {
     margin: 0;
     vertical-align: middle;
 }
@@ -203,7 +203,7 @@ div.detail-element * {
     display: inline-block;
 }
 
-div.summary-element p, div.detail-element p, div.detail-element-head p  {
+div.section-element p, div.detail-element-head p  {
     margin: 0.2em;
 }
 
