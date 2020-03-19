@@ -29,6 +29,9 @@ html{
 
 *, *::before, *::after {
     box-sizing: inherit;
+}
+
+* {
     font-family: sans-serif;
     color: var(--default-text-color);
 }
@@ -37,7 +40,7 @@ body {
     margin:0;
 }
 
-div.topbar {
+div.navbar {
     background-color: var(--header-background-color);
     padding: var(--header-padding);
     text-align: center;
@@ -46,39 +49,39 @@ div.topbar {
     justify-content: space-between;
 }
 
-div.topbar * {
+div.navbar * {
     color: var(--header-text-color);
     font-weight: bold;
     vertical-align: middle;
 }
 
-div.topbar div.full-name {
+div.navbar div.full-name {
     font-weight: bold;
     font-size: xx-large;
     padding: var(--header-text-padding);
 }
 
-div.topbar > div.full-name a, div.topbar > nav.topnav a {
+div.navbar > div.full-name a, div.navbar > nav.pages-nav a {
     text-decoration: none;
     padding: var(--header-text-padding);
     border-radius: var(--header-text-border-radius);
 }
 
-div.topbar .topnav a {
+div.navbar .pages-nav a {
     font-size: 20px;
 }
 
-div.topbar > nav.topnav > a:hover, div.topbar > div.full-name > a:hover {
+div.navbar > nav.pages-nav > a:hover, div.navbar > div.full-name > a:hover {
     background-color: var(--header-text-background-color-hover);
     color: var(--header-text-color-hover);
 }
 
-div.topbar .contacts-bar a img {
+div.navbar .contacts-bar a img {
     height: 2.2em;
     margin: 0.2em;
 }
 
-div.topbar .contacts-bar a img:hover {
+div.navbar .contacts-bar a img:hover {
     height: 2.6em;
     margin: 0;
 }
@@ -116,7 +119,7 @@ section:nth-of-type(even) div.summary-element, section:nth-of-type(even) div.det
     background-color: var(--section-even-element-background-color);
 }
 
-section:nth-of-type(even) div.summary-element p, section:nth-of-type(even) div.detail-element p {
+section:nth-of-type(even) div.summary-element p, section:nth-of-type(even) div.detail-element p, section:nth-of-type(even) div.summary-element p *, section:nth-of-type(even) div.detail-element p *  {
     color:var(--section-even-element-text-color);
 }
 
