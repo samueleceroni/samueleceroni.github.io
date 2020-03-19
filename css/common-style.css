@@ -68,7 +68,7 @@ div.navbar > div.full-name a, div.navbar > nav.pages-nav a {
 }
 
 div.navbar .pages-nav a {
-    font-size: 20px;
+    font-size: large;
 }
 
 div.navbar > nav.pages-nav > a:hover, div.navbar > div.full-name > a:hover {
