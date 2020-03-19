@@ -23,7 +23,7 @@
     --section-even-element-text-color: var(--first-color);
 }
 
-html{
+html {
     box-sizing: border-box;
 }
 
@@ -91,7 +91,7 @@ header > img.main-profile-picture {
     width: 100%;
 }
 
-header > *:last-child{
+header > *:last-child {
     border-bottom-left-radius: var(--img-bottom-border-radius);
     border-bottom-right-radius: var(--img-bottom-border-radius);
 
@@ -123,7 +123,7 @@ section:nth-of-type(even) div.section-element * {
     color:var(--section-even-element-text-color);
 }
 
-div.section-elements-content{
+div.section-elements-content {
     width:85%;
     margin: 0 auto;
 }
@@ -132,13 +132,13 @@ div.section-elements-content > a {
     text-decoration: none;
 }
 
-section > h1{
+section > h1 {
     font-size: xx-large;
     text-align: center;
     margin-top: 0;
 }
 
-section > h2{
+section > h2 {
     font-size: x-large;
     text-align: center;
     margin-top: 0;
@@ -218,7 +218,7 @@ div.summary-element > p.summary-element-title, div.detail-element-head > p.detai
     font-size: x-large;
 }
 
-div.summary-element > p.summary-element-detail, div.detail-element-head > p.detail-element-detail{
+div.summary-element > p.summary-element-detail, div.detail-element-head > p.detail-element-detail {
     margin:0;
 }
 
@@ -248,7 +248,7 @@ div.your-project-data > div {
     align-content: middle;
 }
 
-div.whole-line{
+div.whole-line {
     min-width:70%;
 }
 
